@@ -36,6 +36,7 @@ const About = () => {
               offer curated experiences, warm hospitality, and unforgettable
               views.
             </p>
+            
             <div className="absolute inset-0 flex items-center justify-start px-8">
               <div className="bg-white/80 p-6 rounded-lg max-w-xl">
                 <div className="md:pr-10 text-left">
