@@ -16,9 +16,9 @@ const About = () => {
         subTitle="Barcelona Spain"
       />
       <div className="mx-auto py-20 px-4">
-        <div className="relative w-full h-[500px]">
+        <div className="relative grid grid-cols-2">
           <Image
-            src="/about-image.jpg"
+            src="/about-image.png"
             width={650}
             height={679}
             alt="Palm Hotel"
@@ -37,7 +37,7 @@ const About = () => {
               views.
             </p>
             
-            <div className="absolute inset-0 flex items-center justify-start px-8">
+            <div className="absolute inset-0 flex items-center justify-start px-8 text-right">
               <div className="bg-white/80 p-6 rounded-lg max-w-xl">
                 <div className="md:pr-10 text-left">
                   <h1 className="text-5xl font-extralight text-gray-900 mb-4">
@@ -55,7 +55,7 @@ const About = () => {
                 </div>
 
                 <Image
-                  src="/about-image.jpg"
+                  src="/service.png"
                   width={650}
                   height={50}
                   alt="about"
