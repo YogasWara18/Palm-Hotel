@@ -36,7 +36,7 @@ const ContactForm = () => {
               type="email"
               name="email"
               className="bg-gray-50 p-3 border border-gray-200 rounded-sm w-full font-light"
-              placeholder="johndoe@example.com*"
+              placeholder="PalmHotel@gmail.com"
             />
             <div aria-live="polite" aria-atomic="true">
               <p className="text-sm text-red-500 mt-2"></p>

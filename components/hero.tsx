@@ -1,10 +1,10 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
   return (
     <div className="relative h-screen text-white overflow-hidden">
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <Image
           src="/hero.jpg"
           alt="Background Image"
@@ -12,7 +12,21 @@ const Hero = () => {
           className="object-cover object-center w-full h-full"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
+      </div> */}
+       <div className="absolute inset-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="object-cover object-center w-full h-full"
+        >
+          <source src="/hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
+
 
       <div className="relative flex flex-col justify-center items-center h-full text-center">
         <h1 className="text-6xl font-extralight leading-tight mb-3 mt-35 capitalize">
