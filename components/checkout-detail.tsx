@@ -87,7 +87,7 @@ const CheckoutDetail = async ({ reservationId }: { reservationId: string }) => {
               </td>
             </tr>
             <tr className="">
-              <td className="py-2 truncate">Amount in Rupiah</td>
+              <td className="py-2 truncate">Amount in Euro</td>
               <td className="py-2 text-right truncate">
                 <span>{formatCurrency(reservation.Payment.amount)}</span>
               </td>

@@ -24,12 +24,12 @@ const Navlink = () => {
               alt="avatar"
             />
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center space-x-4">
             <button
               onClick={() => signOut()}
-              className="md:block hidden py-2 px-4 bg-gray-50 text-gray-700 hover:bg-gray-100 rounded-sm cursor-pointer"
+              className="w-10 h-10 rounded-full object-cover"
             >
-              Sign Out
+              {/* Sign out */}
             </button>
           </div>
         </div>
