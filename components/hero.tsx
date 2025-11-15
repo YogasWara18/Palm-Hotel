@@ -13,7 +13,7 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div> */}
-       <div className="relative h-screen w-full overflow-hidden text-white">
+      <div className="relative h-screen w-full overflow-hidden text-white">
         <video
           autoPlay
           muted
@@ -26,24 +26,21 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
-
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-xl text-gray-300 font-light">
-          WELCOME TO
-        </h1>
-        <p className="text-white text-4xl md:text-6xl mt-4 mb-8 font-extralight text-center">
-          PALM HOTEL & BEACH CLUB  
+        <h1 className="text-xl text-gray-300 font-light">WELCOME TO</h1>
+        <p className="text-white text-4xl md:text-6xl mt-4 mb-5 font-extralight text-center">
+          PALM HOTEL & BEACH CLUB
         </p>
         <div className="flex flex-col md:flex-row gap-4">
           <Link
             href="#"
-            className="bg-yellow-500 text-white hover:bg-yellow-600 py-2.5 px-6 md:px-10 text-lg font-light hover:scale-105 hover:shadow-lg transition"
+            className="cursor-pointer transition-all bg-transparent text-white px-6 py-2 rounded-lg border-yellow-500 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-yellow-500 shadow-yellow-500 active:shadow-none"
           >
             Book Now
           </Link>
           <Link
             href="/contact"
-            className="bg-transparent border border-yellow-500 text-white hover:bg-yellow-500 py-2.5 px-6 md:px-10 text-lg font-light hover:scale-105 hover:shadow-lg transition"
+            className="cursor-pointer transition-all bg-transparent text-white px-6 py-2 rounded-lg border-yellow-500 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-yellow-500 shadow-yellow-500 active:shadow-none"
           >
             Contact Us
           </Link>

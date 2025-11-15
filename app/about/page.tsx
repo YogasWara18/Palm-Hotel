@@ -15,7 +15,7 @@ const About = () => {
         title="Palm Hotel & Beach Club"
         subTitle="Barcelona Spain"
       />
-       <div className="grid grid-cols-3 grid-rows-4 gap-4 pt-2">
+      <div className="grid grid-cols-3 grid-rows-4 gap-4 pt-2">
         <div>
           <Image
             src="/about-image1.png"
@@ -89,7 +89,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 

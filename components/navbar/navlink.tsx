@@ -51,7 +51,7 @@ const Navlink = () => {
         <ul className="flex flex-col font-semibold text-sm uppercase p-4 mt-4 rounded-sm bg-transparent md:flex-row md:items-center md:space-x-10 md:p-0 md:mt-0 md:border-0 md:bg-transparent">
           <li>
             <Link
-              className="block py-2 px-3 text-white font-normal hover:bg-yellow-500 rounded-sm md:hover:bg-yellow-500 md:p-0"
+              className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
               href={`/`}
             >
               Home
@@ -59,7 +59,7 @@ const Navlink = () => {
           </li>
           <li>
             <Link
-              className="block py-2 px-3 text-white font-normal hover:bg-yellow-500 rounded-sm md:hover:bg-yellow-500 md:p-0"
+              className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
               href={`/about`}
             >
               About
@@ -67,7 +67,7 @@ const Navlink = () => {
           </li>
           <li>
             <Link
-              className="block py-2 px-3 text-white font-normal hover:bg-yellow-500 rounded-sm md:hover:bg-yellow-500 md:p-0"
+              className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
               href={`/room`}
             >
               Rooms
@@ -75,7 +75,7 @@ const Navlink = () => {
           </li>
           <li>
             <Link
-              className="block py-2 px-3 text-white font-normal hover:bg-yellow-500 rounded-sm md:hover:bg-yellow-500 md:p-0"
+              className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
               href={`/contact`}
             >
               Contact
@@ -86,7 +86,7 @@ const Navlink = () => {
             <>
               <li>
                 <Link
-                  className="block py-2 px-3 text-white hover:bg-yellow-500 rounded-sm md:hover:bg-transparent md:p-0 font-normal"
+                  className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
                   href={`/myreservation`}
                 >
                   My Reservation
@@ -96,7 +96,7 @@ const Navlink = () => {
                 <>
                   <li>
                     <Link
-                      className="block py-2 px-3 text-white hover:bg-yellow-500 rounded-sm md:hover:bg-transparent md:p-0 font-normal"
+                      className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
                       href={`/admin/dashboard`}
                     >
                       Dashboard
@@ -104,7 +104,7 @@ const Navlink = () => {
                   </li>
                   <li>
                     <Link
-                      className="block py-2 px-3 text-white hover:bg-yellow-500 rounded-sm md:hover:bg-transparent md:p-0 font-normal"
+                      className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
                       href={`/admin/room`}
                     >
                       Manage Room
@@ -118,7 +118,7 @@ const Navlink = () => {
             <li className="pt-2 md:pt-0">
               <button
                 onClick={() => signOut()}
-                className="md:hidden py-2.5 px-4 bg-yellow-600 text-white hover:bg-yellow-300 rounded-sm cursor-pointer font-light"
+                className="cursor-pointer transition-all bg-transparent text-white px-6 py-2 rounded-lg border-yellow-500 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-yellow-500 shadow-yellow-500 active:shadow-none"
               >
                 Sign Out
               </button>
@@ -127,7 +127,7 @@ const Navlink = () => {
             <li className="pt-2 md:pt-0">
               <Link
                 href="/signin"
-                className="py-2.5 px-6 bg-yellow-500 text-white hover:bg-yellow-600 rounded-sm font-light"
+                className="cursor-pointer transition-all bg-transparent text-white px-6 py-2 rounded-lg border-yellow-500 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-yellow-500 shadow-yellow-500 active:shadow-none"
               >
                 Sign In
               </Link>

@@ -67,7 +67,6 @@ const Footer = () => {
               E-mail & Contact Person
             </h4>
             <p className="text-white">
-              {/* lorem7 */}
               Carrer de la Marina 19, 08005 Barcelona, Spain
             </p>
             <form action="" className="mt-5">
@@ -76,10 +75,10 @@ const Footer = () => {
                   type="text"
                   name="email"
                   className="w-full p-3 rounded-sm bg-white"
-                  placeholder="johndoe@example.com"
+                  placeholder="PalmHotel@gmail.com"
                 />
               </div>
-              <button className="bg-yellow-500 p-3 font-light text-white w-full text-center rounded-sm hover:bg-yellow-600">
+              <button className="cursor-pointer transition-all bg-transparent text-white px-6 py-2 rounded-lg border-yellow-500 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-yellow-500 shadow-yellow-500 active:shadow-none">
                 Subscribe
               </button>
             </form>

@@ -6,7 +6,7 @@ import RoomSkeleton from "@/components/skeletons/room-skeleton";
 
 export const metadata: Metadata = {
   title: "Room & Rates",
-  description: "Choose your best room today",
+  description: "Book your escape. Stay your way",
 };
 
 const RoomPage = () => {
@@ -14,7 +14,7 @@ const RoomPage = () => {
     <div>
       <TitleSection
         title="Rooms & Rates"
-        subTitle="Lorem ipsum dolor sit amet."
+        subTitle="Your perfect room, just a click away"
       />
       <div className="mt-10 px-4">
         <Suspense fallback={<RoomSkeleton />}>
