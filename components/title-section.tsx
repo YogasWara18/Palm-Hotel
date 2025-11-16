@@ -8,7 +8,7 @@ const TitleSection = ({
   subTitle: string;
 }) => {
   return (
-    <div className="relative h-68 text-white overflow-hidden">
+    <div className="relative h-[380px] text-white overflow-hidden">
       <div className="absolute inset-0">
         <Image
           src="/about.jpg"

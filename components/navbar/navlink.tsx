@@ -48,7 +48,7 @@ const Navlink = () => {
           hidden: !open,
         })}
       >
-        <ul className="flex flex-col font-semibold text-sm uppercase p-4 mt-4 rounded-sm bg-transparent md:flex-row md:items-center md:space-x-10 md:p-0 md:mt-0 md:border-0 md:bg-transparent">
+        <ul className="flex flex-col font-semibold text-sm uppercase p-4 mt-4 rounded-sm bg-transparent md:flex-row md:items-center md:space-x-10 md:p-0 md:mt-0 md:border-0 md:bg-transparent gap-y-3">
           <li>
             <Link
               className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
