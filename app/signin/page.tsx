@@ -20,12 +20,10 @@ const SignIn = async ({
   console.log(redirectUrl);
 
   return (
-    <div className="min-h-screen flex items-center">
-      <div className="bg-white w-96 mx-auto rounded-sm shadow p-8">
-        <h1 className="text-4xl font-bold mb-1">Sign In</h1>
-        <p className="font-medium mb-5 text-gray-500">
-          Sign In to your account
-        </p>
+    <div className="min-h-screen flex items-center bg-gray-900">
+      <div className="bg-transparent border-2 border-yellow-500 w-96 mx-auto rounded-sm shadow p-8">
+        <h1 className="text-4xl font-Light mb-1 t text-white">Sign In</h1>
+        <p className="cursor-pointer transition-all bg-transparent text-white px-6 py-2 rounded-lg border-yellow-500 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-yellow-500 shadow-yellow-500 active:shadow-none">Sign In to your account</p>
         <div className="py-4 text-center">
           <SigninGoogleButton redirectUrl={redirectUrl} />
         </div>
