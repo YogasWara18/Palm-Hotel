@@ -12,8 +12,8 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Home",
-  description: "Hotel Booking Website",
+  title: "Palm Hotel",
+  description: "Palm Hotel & Beach Club",
 };
 
 export default async function RootLayout({
