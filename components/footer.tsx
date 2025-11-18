@@ -66,55 +66,10 @@ const Footer = () => {
             <h4 className="mb-8 text-xl font-light text-white">
               E-mail & Contact Person
             </h4>
+            <p className="text-white">+34 972 36 76 25</p>
             <p className="text-white">
-              Carrer de la Marina 19, 08005 Barcelona, Spain
+              Carrer d Aribau, 3, 17310 Lloret de Mar, Barcelona, Spain
             </p>
-
-             <div className="flex justify-center space-x-5">
-      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-        <Image
-          src="https://img.icons8.com/fluent/30/000000/facebook-new.png"
-          alt="Facebook"
-          width={30}
-          height={30}
-        />
-      </a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-        <Image
-          src="https://img.icons8.com/fluent/30/000000/linkedin-2.png"
-          alt="LinkedIn"
-          width={30}
-          height={30}
-        />
-      </a>
-      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-        <Image
-          src="https://img.icons8.com/fluent/30/000000/instagram-new.png"
-          alt="Instagram"
-          width={30}
-          height={30}
-        />
-      </a>
-      <a href="https://messenger.com" target="_blank" rel="noopener noreferrer">
-        <Image
-          src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png"
-          alt="Messenger"
-            width={30}
-          height={30}
-        />
-      </a>
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-        <Image
-          src="https://img.icons8.com/fluent/30/000000/twitter.png"
-          alt="Twitter"
-          width={30}
-          height={30}
-        />
-      </a>
-    </div>
-
-
-
             <form action="" className="mt-5">
               <div className="mb-5">
                 <input
@@ -127,6 +82,68 @@ const Footer = () => {
               <button className="cursor-pointer transition-all bg-transparent text-white px-6 py-2 rounded-lg border-yellow-500 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-yellow-500 shadow-yellow-500 active:shadow-none">
                 Subscribe
               </button>
+              <div className="flex justify-center space-x-5 mt-2">
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/youtube.png"
+                    alt="YouTube"
+                    width={30}
+                    height={30}
+                  />
+                </a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/facebook.png"
+                    alt="Facebook"
+                    width={30}
+                    height={30}
+                  />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/instagram.png"
+                    alt="Instagram"
+                    width={30}
+                    height={30}
+                  />
+                </a>
+                <a
+                  href="https://whatsap.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/whatsap.png"
+                    alt="Messenger"
+                    width={30}
+                    height={30}
+                  />
+                </a>
+                <a
+                  href="https://tiktok.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/tik-tok.png"
+                    alt="Twitter"
+                    width={30}
+                    height={30}
+                  />
+                </a>
+              </div>
             </form>
           </div>
         </div>

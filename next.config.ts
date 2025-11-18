@@ -36,10 +36,6 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "tle2us9oabsh6tzn.public.blob.vercel-storage.com"
-      },
-      {
-        protocol: "https",
-        hostname: "img.icons8.com"
       }
     ],
   },

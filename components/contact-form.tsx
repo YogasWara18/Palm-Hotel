@@ -7,7 +7,7 @@ import clsx from "clsx";
 const ContactForm = () => {
   //   const [state, formAction] = useFormState(ContactMessage, null);
   return (
-    <div className="bg-white p-8 rounded-sm shadow-sm">
+    <div className="bg-gray-900 p-8 rounded-sm shadow-sm">
       {/* Alert */}
       {/* {state?.message ? (
         <div
@@ -73,7 +73,7 @@ const ContactForm = () => {
         <button
           type="submit"
           className={clsx(
-            "px-10 py-4 text-center font-semibold text-white w-full bg-orange-400 rounded-sm hover:bg-orange-500 cursor-pointer"
+            "px-10 py-4 text-center cursor-pointer transition-all bg-transparent text-white rounded-lg border-yellow-500 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-yellow-500 shadow-yellow-500 active:shadow-none"
             // {
             //   "opacity-50 cursor-progress animate-pulse": pending,
             // }

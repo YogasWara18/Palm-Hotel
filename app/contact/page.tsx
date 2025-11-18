@@ -14,17 +14,22 @@ export const metadata: Metadata = {
 const Contact = () => {
   return (
     <div>
-      <TitleSection title="Contact Us" subTitle="Lorem ipsum dolor sit amet." />
+      <TitleSection title="Contact Us" subTitle="We are here to help you unwind.
+
+" />
       <div className="max-w-screen-xl mx-auto py-20 px-4">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
-            <h1 className="text-lg text-gray-500 mb-3">Contact Us</h1>
-            <h1 className="text-5xl font-semibold text-gray-900 mb-4">
-              Get In Touch Today
+            <h1 className="text-4xl text-gray-900 mb-3 font-extralight">Contact Us</h1>
+            <h1 className="text-3xl font-light text-gray-900 mb-2">
+              We are here to help you unwind.
             </h1>
-            <p className="text-gray-700 py-5">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro in
-              culpa ducimus ad. Tempore, alias?
+            <p className="text-gray-700 py-5 font-normal">
+              Whether you are planning a romantic
+              getaway, a beachfront event, or simply have questions about your
+              stay, our team is ready to assist you. Reach out to us anytime —
+              well make sure your experience at Palm Hotel & Beach Club is
+              seamless and unforgettable.
             </p>
             <ul className="list-item space-y-6 pt-8">
               <li className="flex gap-5">
@@ -33,7 +38,7 @@ const Contact = () => {
                 </div>
                 <div className="flex-1">
                   <h4 className="text-lg font-semibold mb-1">Email :</h4>
-                  <p>email-us@example.com</p>
+                  <p>PalmHotel@gmail.com</p>
                 </div>
               </li>
               <li className="flex gap-5">
@@ -42,7 +47,7 @@ const Contact = () => {
                 </div>
                 <div className="flex-1">
                   <h4 className="text-lg font-semibold mb-1">Phone Number :</h4>
-                  <p>+88012 2910 1781, +88019 6128 1689</p>
+                  <p>+34 972 36 76 25</p>
                 </div>
               </li>
               <li className="flex gap-5">
@@ -51,7 +56,7 @@ const Contact = () => {
                 </div>
                 <div className="flex-1">
                   <h4 className="text-lg font-semibold mb-1">Address :</h4>
-                  <p>Coderx Street Road 2062, PDG, INDONESIA</p>
+                  <p>Carrer d Aribau, 3, 17310 Lloret de Mar, Barcelona, Spain</p>
                 </div>
               </li>
             </ul>

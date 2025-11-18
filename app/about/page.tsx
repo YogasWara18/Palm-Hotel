@@ -22,7 +22,7 @@ const About = () => {
          {/* Deskripsi */}
       <section className="max-w-3xl mx-auto text-center">
         <h2 className="text-2xl font-extralight mb-4 text-white">
-         We are Palm Hotel & Beach Club Where Elegance Meets the Ocean
+         We are Palm Hotel & Beach Club 
         </h2>
         <p className="text-white leading-relaxed font-normal">
           Palm Hotel & Beach Club is a luxurious seaside sanctuary nestled along
