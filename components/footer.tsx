@@ -16,10 +16,10 @@ const Footer = () => {
                 priority={true}
               />
             </Link>
-            <h1 className="text-white font-extralight">
-              Palm Hotel & Beach Club{" "}
+            <h1 className="text-white font-extralight text-3xl mb-1.5">
+              Palm Hotel & Beach Club
             </h1>
-            <p className="text-white">
+            <p className="text-white font-light ">
               Enjoy tropical luxury where modern comforts blend with natural
               charm. Situated on a stunning beachfront.
             </p>
@@ -69,6 +69,52 @@ const Footer = () => {
             <p className="text-white">
               Carrer de la Marina 19, 08005 Barcelona, Spain
             </p>
+
+             <div className="flex justify-center space-x-5">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <Image
+          src="https://img.icons8.com/fluent/30/000000/facebook-new.png"
+          alt="Facebook"
+          width={30}
+          height={30}
+        />
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <Image
+          src="https://img.icons8.com/fluent/30/000000/linkedin-2.png"
+          alt="LinkedIn"
+          width={30}
+          height={30}
+        />
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <Image
+          src="https://img.icons8.com/fluent/30/000000/instagram-new.png"
+          alt="Instagram"
+          width={30}
+          height={30}
+        />
+      </a>
+      <a href="https://messenger.com" target="_blank" rel="noopener noreferrer">
+        <Image
+          src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png"
+          alt="Messenger"
+            width={30}
+          height={30}
+        />
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <Image
+          src="https://img.icons8.com/fluent/30/000000/twitter.png"
+          alt="Twitter"
+          width={30}
+          height={30}
+        />
+      </a>
+    </div>
+
+
+
             <form action="" className="mt-5">
               <div className="mb-5">
                 <input
