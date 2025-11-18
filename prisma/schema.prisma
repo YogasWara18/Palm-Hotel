@@ -45,7 +45,7 @@ model RoomAmenities {
 
 model Reservation {
   id        String   @id @default(cuid())
-  starDate  DateTime
+  startDate  DateTime
   endDate   DateTime
   price     Int
   userId    String

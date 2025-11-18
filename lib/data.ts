@@ -120,14 +120,14 @@ export const getReservationByUserId = async () => {
 export const getReservationByRoomId = async (roomId: string) => {
   const result = await prisma.reservation.findMany({
     select: {
-      starDate: true,
+      startDate: true,
       endDate: true,
     },
     where: {
       roomId: roomId,
       Payment: { status: { not: "failure" } },
     },
-    orderBy: { starDate: "asc" },
+    orderBy: { startDate: "asc" },
   });
   return result;
 };
