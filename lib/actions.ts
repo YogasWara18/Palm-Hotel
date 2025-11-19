@@ -171,7 +171,7 @@ export const createReserve = async (
       // insert reservation
       const reservation = await tx.reservation.create({
         data: {
-          starDate: startDate,
+          startDate: startDate,
           endDate: endDate,
           price: price,
           roomId: roomId,
