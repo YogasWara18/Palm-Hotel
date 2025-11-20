@@ -50,7 +50,7 @@ const MyReservationList = async ({
                   </div>
                   <div className="flex items-center justify-between text-sm font-medium text-gray-900 truncate">
                     <span className="truncate">Expected Arrival</span>
-                    <span>{formatDate(item.starDate.toISOString())}</span>
+                    <span>{formatDate(item.startDate.toISOString())}</span>
                   </div>
                   <div className="flex items-center justify-between text-sm font-medium text-gray-900 truncate">
                     <span className="truncate">Expected Departure</span>
@@ -59,7 +59,7 @@ const MyReservationList = async ({
                   <div className="flex items-center justify-between text-sm font-medium text-gray-900 truncate">
                     <span>Duration</span>
                     <span>
-                      {differenceInCalendarDays(item.endDate, item.starDate)}
+                      {differenceInCalendarDays(item.endDate, item.startDate)}
                       <span className="ml-1">Night</span>
                     </span>
                   </div>
