@@ -12,7 +12,7 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Palm Hotel",
+  title: "Palm Hotel & Beach Club",
   description: "Palm Hotel & Beach Club",
 };
 

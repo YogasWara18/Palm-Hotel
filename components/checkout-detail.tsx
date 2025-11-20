@@ -12,7 +12,7 @@ const CheckoutDetail = async ({ reservationId }: { reservationId: string }) => {
 
   const duration = differenceInCalendarDays(
     reservation.endDate,
-    reservation.starDate
+    reservation.startDate
   );
 
   return (
@@ -69,7 +69,7 @@ const CheckoutDetail = async ({ reservationId }: { reservationId: string }) => {
             <tr className="">
               <td className="py-2">Arrival</td>
               <td className="py-2 text-right truncate">
-                {formatDate(reservation.starDate.toISOString())}
+                {formatDate(reservation.startDate.toISOString())}
               </td>
             </tr>
             <tr className="">
