@@ -36,7 +36,7 @@ const ReserveForm = ({
 
   const excludeDates = disabledDate.map((item) => {
     return {
-      start: item.starDate,
+      start: item.startDate,
       end: item.endDate,
     };
   });
