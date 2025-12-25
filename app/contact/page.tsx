@@ -65,7 +65,27 @@ const Contact = () => {
           <ContactForm />
         </div>
       </div>
+
+       {/* Google maps */}
+      <div className="bg-gray-900 rounded-lg shadow-lg overflow-hidden text-gray-900">
+        <div className="p-4 text-center">
+          <h3 className="text-lg font-light mb-2 text-white">Google Maps</h3>
+          <iframe
+            title="Infinity Pool Palm Hotel Barcelona"
+            src="https://www.google.com/maps?q=Infinity+Pool+Palm+Hotel+Barcelona&output=embed"
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="rounded-md"
+          ></iframe>
+          <p className="text-sm text-blue-600 underline mt-2"></p>
+        </div>
+      </div>
     </div>
+    
   );
 };
 
