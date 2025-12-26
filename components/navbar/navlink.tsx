@@ -11,33 +11,33 @@ const Navlink = () => {
   const [open, setOpen] = useState(false);
   const { data: session } = useSession();
 
+  // Reusable class untuk semua link menu
+  const navlinkClass =
+    "px-3 py-2 rounded-md text-sm font-light text-gray-800 " +
+    "hover:text-yellow-500 transition-all duration-300 " +
+    "border-b-2 border-transparent hover:border-yellow-500";
+
   return (
     <>
+      {/* Avatar jika login */}
       {session?.user ? (
-        <div className="flex items-center justify-end md:order-2 gap-1">
-          <div className="hidden text-sm bg-gray-50 border rounded-full md:me-0 md:block focus:ring-4 focus:ring-gray-300">
+        <div className="flex items-center justify-end md:order-2 gap-2">
+          <div className="hidden md:block">
             <Image
-              className="size-8 rounded-full"
+              className="size-10 rounded-full ring-2 ring-yellow-400 shadow-md"
               src={session.user.image || "/avatar.svg"}
               width={64}
               height={64}
               alt="avatar"
             />
           </div>
-          <div className="flex items-center space-x-4">
-            <button
-              onClick={() => signOut()}
-              className="w-10 h-10 rounded-full object-cover"
-            >
-              {/* Sign out */}
-            </button>
-          </div>
         </div>
       ) : null}
-      {/* Toogle button navlink */}
+
+      {/* Toggle button navlink */}
       <button
         onClick={() => setOpen(!open)}
-        className="inline-flex items-center p-2 justify-center text-sm text-gray-500 rounded-md md:hidden hover:bg-gray-100"
+        className="inline-flex items-center p-2 justify-center text-sm text-gray-500 rounded-md md:hidden hover:bg-gray-100 transition-transform hover:rotate-90 duration-300"
       >
         {!open ? <IoMenu className="size-8" /> : <IoClose className="size-8" />}
       </button>
@@ -48,65 +48,46 @@ const Navlink = () => {
           hidden: !open,
         })}
       >
-        <ul className="flex flex-col font-semibold text-sm uppercase p-4 mt-4 rounded-sm bg-transparent md:flex-row md:items-center md:space-x-10 md:p-0 md:mt-0 md:border-0 md:bg-transparent gap-y-3">
+        <ul className="flex flex-col font-semibold text-sm uppercase tracking-wide p-4 mt-4 rounded-sm md:flex-row md:items-center md:space-x-10 md:p-0 md:mt-0 gap-y-3">
+          {/* Menu umum */}
           <li>
-            <Link
-              className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
-              href={`/`}
-            >
+            <Link className={navlinkClass} href={`/`}>
               Home
             </Link>
           </li>
           <li>
-            <Link
-              className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
-              href={`/about`}
-            >
+            <Link className={navlinkClass} href={`/about`}>
               About
             </Link>
           </li>
           <li>
-            <Link
-              className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
-              href={`/room`}
-            >
+            <Link className={navlinkClass} href={`/room`}>
               Rooms
             </Link>
           </li>
           <li>
-            <Link
-              className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
-              href={`/contact`}
-            >
+            <Link className={navlinkClass} href={`/contact`}>
               Contact
             </Link>
           </li>
-          {/* Show menu base on session */}
+
+          {/* Menu khusus jika login */}
           {session && (
             <>
               <li>
-                <Link
-                  className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
-                  href={`/myreservation`}
-                >
+                <Link className={navlinkClass} href={`/myreservation`}>
                   My Reservation
                 </Link>
               </li>
               {session.user.role === "admin" && (
                 <>
                   <li>
-                    <Link
-                      className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
-                      href={`/admin/dashboard`}
-                    >
+                    <Link className={navlinkClass} href={`/admin/dashboard`}>
                       Dashboard
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      className="px-3 py-2 rounded-md text-sm font-light text-white hover:text-yellow-500 transition-all duration-300 border-b-2 border-transparent hover:border-yellow-500"
-                      href={`/admin/room`}
-                    >
+                    <Link className={navlinkClass} href={`/admin/room`}>
                       Manage Room
                     </Link>
                   </li>
@@ -114,11 +95,13 @@ const Navlink = () => {
               )}
             </>
           )}
+
+          {/* Sign In / Sign Out */}
           {session ? (
             <li className="pt-2 md:pt-0">
               <button
                 onClick={() => signOut()}
-                className="cursor-pointer transition-all bg-transparent text-white px-6 py-2 rounded-lg border-yellow-500 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-yellow-500 shadow-yellow-500 active:shadow-none"
+                className="cursor-pointer transition-all bg-yellow-500 text-white px-6 py-2 rounded-lg shadow-md hover:brightness-110 hover:-translate-y-[2px] active:translate-y-[2px]"
               >
                 Sign Out
               </button>
@@ -127,7 +110,7 @@ const Navlink = () => {
             <li className="pt-2 md:pt-0">
               <Link
                 href="/signin"
-                className="cursor-pointer transition-all bg-transparent text-white px-6 py-2 rounded-lg border-yellow-500 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-yellow-500 shadow-yellow-500 active:shadow-none"
+                className="cursor-pointer transition-all bg-yellow-500 text-white px-6 py-2 rounded-lg shadow-md hover:brightness-110 hover:-translate-y-[2px] active:translate-y-[2px]"
               >
                 Sign In
               </Link>
