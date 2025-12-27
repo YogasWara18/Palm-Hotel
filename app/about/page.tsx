@@ -27,7 +27,7 @@ const testimonials = [
     name: "Mark Thompson",
     role: "Entrepreneur",
     message:
-      "An unforgettable experience! The amenities were top-notch, and the staff made me feel like royalty. Highly recommend for anyone visiting Barcelona.",
+      "n unforgettable experience! The amenities were top-notch, and the staff made me feel like royalty. Highly recommend for anyone visiting Barcelona.",
     image: "/Testimoni-mark.jpg",
   },
   {
