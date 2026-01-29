@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen text-white overflow-hidden mt-37">
+    <div className="relative h-screen text-white overflow-hidden">
       {/* <div className="absolute inset-0">
         <Image
           src="/hero.jpg"

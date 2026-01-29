@@ -13,7 +13,7 @@ const Navlink = () => {
 
   // Reusable class untuk semua link menu
   const navlinkClass =
-    "px-3 py-2 rounded-md text-sm font-light text-gray-800 " +
+    "px-3 py-2 rounded-md text-sm font-bold text-gray-200 " +
     "hover:text-yellow-500 transition-all duration-300 " +
     "border-b-2 border-transparent hover:border-yellow-500";
 

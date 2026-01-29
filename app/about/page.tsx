@@ -36,7 +36,7 @@ const testimonials = [
     role: "Photographer",
     message:
       "The perfect blend of luxury and relaxation. The beach club is stunning, and the hotel rooms are beautifully designed. I can't wait to return!",
-    image: "/Testimoni-sofia.jpg",
+    image: "/Testimoni-sofia-v1.jpg",
   },
 ];
 
